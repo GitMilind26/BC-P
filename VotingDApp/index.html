@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decentralized Voting DApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>🗳️ Decentralized Voting</h1>
+            <p>Transparent voting powered by Ethereum</p>
+        </header>
+
+        <section class="wallet-section">
+            <button id="connectBtn">Connect MetaMask</button>
+            <p id="account">Wallet: Not connected</p>
+            <p id="network">Network: Not connected</p>
+            <p id="status">Connect your wallet to begin.</p>
+        </section>
+
+        <section class="candidates-section">
+            <h2>Available Candidates</h2>
+            <div id="candidates" class="candidate-list">
+                Connect your wallet to load candidates.
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/ethers@6.13.4/dist/ethers.umd.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
